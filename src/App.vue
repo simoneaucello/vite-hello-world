@@ -2,7 +2,8 @@
   export default {
     data(){
       return{
-        title: 'HELLO VITE'
+        title: 'HELLO VITE',
+        description: 'ViteJS è uno strumento di compilazione e un server di sviluppo locale. Semplifica lo sviluppo front-end delle moderne applicazioni web ricaricando dinamicamente i moduli del codice per evitare di ricompilare l\'intera applicazione.'
       }
     }
   }
@@ -12,8 +13,9 @@
   <div>
     <div class="big-big circle">
       <div class="big circle">
-        <div class="circle">
+        <div class="circle flex-col">
           <h1>{{ title }}</h1>
+          <p>{{ description }}</p>
         </div>
       </div>
     </div>
@@ -25,8 +27,10 @@
 h1{
   text-align: center;
   color: #b65552;
-  font-size: 7rem;
+  font-size: 5rem;
   line-height: 1.1;  
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 .circle{
@@ -49,6 +53,13 @@ h1{
   width: 600px;
   height: 600px;
   background-color: #ffb95f;
+}
+
+p{
+  text-align: center;
+  margin-top: 0;
+  font-size: 15px;
+  width: 300px;
 }
 
 </style>

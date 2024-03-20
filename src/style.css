@@ -16,4 +16,6 @@ body {
   height: 100vh;
 }
 
-
+.flex-col{
+  flex-direction: column;
+}
