@@ -1,30 +1,54 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
+<script>
+  export default {
+    data(){
+      return{
+        title: 'HELLO VITE'
+      }
+    }
+  }
 </script>
 
 <template>
   <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
+    <div class="big-big circle">
+      <div class="big circle">
+        <div class="circle">
+          <h1>{{ title }}</h1>
+        </div>
+      </div>
+    </div>
   </div>
-  <HelloWorld msg="Vite + Vue" />
 </template>
 
 <style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+
+h1{
+  text-align: center;
+  color: #b65552;
+  font-size: 7rem;
+  line-height: 1.1;  
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+
+.circle{
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  background-color: #fff5bb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
+
+.circle.big{
+  width: 500px;
+  height: 500px;
+  background-color: #c44e4e; 
 }
+
+.circle.big-big{
+  width: 600px;
+  height: 600px;
+  background-color: #ffb95f;
+}
+
 </style>
